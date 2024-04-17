@@ -36,7 +36,7 @@ button{
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: white;
     border: 1px solid #082edb ;
     box-shadow: 2px 2px 7px black;
@@ -46,14 +46,22 @@ button{
 button:hover{
     background-color: rgb(3, 3, 112);
 }
-
-
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color: #262626;
+    cursor: pointer;
+    display: none;
+}
 header{
     padding: 0px 50px;
 }
 header .container{
     display: flex;
-    height: 80px;
+    height: 90px;
+    width: 100%;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
 .log{
@@ -76,6 +84,7 @@ justify-content: space-between;
     text-decoration: none;
     transition: 0.3s;
     cursor: pointer;
+    
 }
 
 .a-nav:hover{
@@ -96,7 +105,7 @@ border-radius: 1px;
 }
 .nav-menu li a{
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 19px 15px;
     display: block;
     font-size: 14px;
 }
@@ -128,6 +137,7 @@ border-radius: 1px;
     justify-content: center;
     text-align: center;
     height: 90vh;
+    width: 100%;
     color: white;
     background-image: linear-gradient(
         20deg, rgba(0,0,0,0.5),
@@ -156,15 +166,17 @@ border-radius: 1px;
 #formulario{
     padding: 100px 500px;
     justify-content: center;
+    height: 40%;
 }
 form{
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 450px;
-    height: 500x;
-    background-color: white
+    width: 100%;
+    margin: auto;
+    background: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.4)
 }
 
 .input-group{
@@ -173,7 +185,12 @@ form{
     text-align: left;
 }
 h2{
-    font-size: 35px;
+    color: #004AAD;
+    text-align: center;
+    margin: 0;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 label{
@@ -184,17 +201,26 @@ label{
 }
 
 input, textarea{
-    padding: 17px 25px;
-    border-radius: 25px;
+    width: 100%;
     margin-bottom: 20px;
-    background-color: rgb(219, 218, 217);
-    border: 2px solid #F0FAF1;
-    color: black;
-    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    background-color: #d4dfee;
+}
+textarea{
+    min-height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
 input::placeholder, textarea::placeholder{
-    color: #979595;
+    color: #181717;
 }
 
 .form-text{
@@ -204,7 +230,7 @@ input::placeholder, textarea::placeholder{
     text-align: center;
 }
 .form-text a{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;   
     text-decoration: none;
 }
@@ -214,12 +240,13 @@ input::placeholder, textarea::placeholder{
 }
 
 .btn{
-    background-color: #1E92E9;
+    background-color: #004AAD;
     color: #ffffff;
     border: 0;
     border-radius: 25px;
     box-shadow: rgba(0,0,0,0.2);
     cursor: pointer;
+    padding: 14px;
 }
 .btn:hover{
     background-color: #219BF9;
@@ -229,14 +256,16 @@ input::placeholder, textarea::placeholder{
 #nuestros-programas{
 color: white;
     background-color: #004AAD;
-    height: 40vh;
+    height: 50%;
+    width: 100%;
 }
 #nuestros-programas {
     text-align: center;
 
 }
 #nuestros-programas h2{
- font-size: 40px;
+ font-size: 20px;
+ color: white;
 }
  #nuestros-programas .container1{
     padding: 25px 0px
@@ -254,9 +283,12 @@ color: white;
 }
 .container{
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 100vh;
     background-color: white;
+}
+.slider{
+    width: 100px;
 }
 .slider input{
     visibility: hidden;
@@ -413,20 +445,19 @@ color: white;
     transform: translateY(-3%);
 }
 .card img{
-width: 240px;
-height: 240px;
+width: 320px;
+height: 370px;
 border-radius: 15px;
-padding-right: 20px;
-padding-left: 0px;
+
 }
 .video-card{
-    width: 230px;
-height: 230px;
+    width: 300px;
+height: 300px;
 border-radius: 15px;
 }
 .video-card-2{
-    width: 230px;
-height: 230px;
+    width: 300px;
+height: 300px;
 border-radius: 15px;
 }
 
@@ -544,134 +575,73 @@ padding: 45px 0px;
 .my-float{
 	margin-top:16px;
 }
-@media screen and (max-width:450px){
-    .nav-menu, .nav-container, #formulario {
-     max-width: 100px;
+@media screen and (max-width:991px){
+    header{
+        padding: 20px;
     }
 
-    #formulario{
-        padding: 0 10px;
-        max-width: 50px;
-        max-height: 900px;
+    header label{
+        display: initial;
+        padding: 20px;
+        flex-direction: row;
+    }
+    header .nav-container{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #FFF;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
         
-      
+
+    }
+
+    header .nav-container ul li{
+        width: 100%;
+    }
+    header .nav-container ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .nav-container ul li ul li{
+        background: #eee;
+    }
+    header .nav-container ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .nav-container{
+        display: initial
+    }
+    #formulario{
+        height: 700px;
     }
     .form-2{
-        max-width: 410px;
-        max-height: 560px;
-        width: 370px;
-    
+       
     }
-    .form-2 h2{
-        font-size: 16px;
-        text-align:center;
+    #fallos-pag{
+        width: 100%;
+        float: 0;
+        left: 0;
     }
-    .input-group{
-        padding: 3px;
-        
+    .cel-fallo{
+        width: 200px;
+        height: 500px;
+        float: 0;
+        left: 0;
+        padding: 20px 0;
     }
-    .label{
-        font-size: 14px;
-        padding-bottom: 1px;
-    }
-    .input-1{
-        font-size: 10px;
-        padding-bottom: 1px;
-        text-align: initial;
-        padding-top: 6px;
-    }
-    .btn{
-        font-size: 13px;
-        border-radius: 10px;
-        padding-bottom: 1px;
-        text-align: center;
-        align-items: center;
-        
-    }
-    
-    
-
-}
-
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-
-    
-    }
-    
-    #formulario{
-        width: 90%;
-        padding: 25px 20px;
-    }
-
-    .content{
-    
-        padding-left: 10px;
-    }
-    .content2 .primerslider .cel-fallo{
-        width: 81%;
-        padding: 0px 20px;
-        
-    }
-    
-    .content .img-fallo{
-        width: 70%;
-        padding: 25px 20px;
-    }
-    
-    .container-cards{
-        width: 90%;
+    #cartas{
         display: flex;
         flex-direction: column;
-        max-width: 500px;
-        padding: 0 25px;
     }
-    .card{
-        width: 100%;
-        height: 90%;
-        margin: 20px;
-        border-radius: 6px;
-        overflow: hidden;
-        background: #fff;
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-        cursor: default;
-        transition: all 400ms ease;
-        
+    .container-cards{
+        width: 365px;
+        flex-direction: column;
     }
-    .card img{
-        width: 100%;
-        height: 310px;
-        }
-        
-        .card .contenido{
-            padding: 15px;
-            text-align: center;
-            padding: 0 25px;
-        }
-        
-        .card .contenido p{
-            display: flex;
-            font-size: 15px;
-            line-height: 1.5;
-            color: #6a6a6a;
-        }
-        .card .contenido h3{
-            font-size: 29px;
-            text-transform: initial;
-            font-weight: bold;
-        }
-        .video-card{
-            width: 300px;
-        height: 230px;
-        border-radius: 15px;
-        }
-        .video-card-2{
-            width: 300px;
-        height: 230px;
-        border-radius: 15px;
-        }
+    figure{
+        width: 220px;
+        padding-right: 100px;
+    }
 }
+
+
