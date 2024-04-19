@@ -158,7 +158,7 @@ justify-content: space-between;
 }
 
 #hero h1{
-    font-family:  '', sans-serif;
+    font-family:'Glacial Indifference', sans-serif;
     
 }
 #formulario{
@@ -390,6 +390,8 @@ padding: 45px 0px;
 }
 .pie-pagina .grupo-1 .box figure img{
     width: 250px;
+    cursor: none;
+    user-select: none;
 }
 .pie-pagina .grupo-1 .box h2{
     color: white;
@@ -458,6 +460,26 @@ padding: 45px 0px;
 .my-float{
 	margin-top:16px;
 }
+
+/*Pagina mision y vision*/
+.containermision{
+   max-width: 700px;
+   width: 100%;
+   padding: 45px 20px;
+   margin: 0 auto;
+   margin-top: 150px;
+   margin-bottom: 150px;
+   border: 1px solid #004AAD;
+   border-radius: 15px;
+}
+.volver-img{
+    width: 100px;
+    padding: 0 20px;
+}
+.volver-img:hover{
+    background-color: #004AAD;
+}
+
 
 
 @media screen and (max-width:991px){
@@ -575,12 +597,41 @@ padding: 45px 0px;
         .container label{
             margin: 0;
             padding: 20px 70px;
+            user-select: none;
         }
         
         #fallos-pag img{
             width: 400px;
             height: 350px;
         }
+
+        /*Pagina mision y vision*/
+        .containermision{
+            width: 80%;
+            padding: 45px 10px;
+            margin: 0;
+            margin-top: 75px;
+            margin-bottom: 75px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 1px 1px 10px black;
+         }
+         .containermision p{
+            font-size: 12px;
+         }
+         .containermision h2{
+            font-size: 14px;
+         }
+.volver-img{
+    width: 100px;
+    padding: 0 20px;
+}
+.volver-img:hover{
+    background-color: #004AAD;
+}
+
+
+
 }
 
 
