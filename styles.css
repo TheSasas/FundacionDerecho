@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
 html{
     scroll-behavior: smooth;
@@ -23,9 +24,7 @@ li{font-size: 25px;}
 header{
     background: none;
     position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+    width: 98%;
 
 }
 header .container{
@@ -164,28 +163,32 @@ border-radius: 1px;
     
 }
 #formulario{
-    background-color: rgb(235, 233, 230);
+    background-color:white;
 }
 #formulario{
-    padding: 100px 500px;
-    justify-content: center;
-    height: 40%;
-}
-form{
+    height: 100vh;
     width: 100%;
-    margin: auto;
+}
+.form-2{
+    width: 30%;
+    margin: 520px;
     background: white;
-    padding: 10px 20px;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 15px;
-    box-shadow: 1px 5px 10px rgba(0,0,0,0.4)
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.4);
+    padding: 20px 30px;
+    
+}
+.form-2{
+    max-width: 70%;
 }
 
 .input-group{
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 100%;
 }
 h2{
     color: #004AAD;
@@ -255,7 +258,9 @@ input::placeholder, textarea::placeholder{
     background-color: #219BF9;
 }
 
-
+.container1{
+    width: 100%;
+}
 #nuestros-programas{
 color: white;
     background-color: #004AAD;
@@ -274,21 +279,18 @@ color: white;
     padding: 25px 0px
    }
 
-
-#caracteristicas .container{
-    padding: 200px 0px;
-    text-align: center;
+#fallos-pag{
+width: 908px;
+}
+#cartas{
+    width: 100%;
 }
 
-#caracteristicas li {
-    padding: 16px 0px;
-    font-weight: bold;
-}
 .container{
     position: relative;
     width: 90%;
     height: 100vh;
-    background-color: white;
+
 }
 .slider{
     width: 100px;
@@ -335,8 +337,7 @@ color: white;
 }
 
 .content{
-    position: relative;
-    width: 100%;
+    width: 10%;
     display: flex;
     transition: 400ms ease-in-out;
 }
@@ -411,8 +412,13 @@ color: white;
     left: -900vh;
 }
 
+.content2{
+width: 50%;
+
+}
+
 .content2 .cel-fallo{
-    width: 650px;
+    width: 100%;
 }
 
 .content .img-fallo{
@@ -555,29 +561,7 @@ padding: 45px 0px;
 }
 
 /*Boton de whatsapp*/
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#29e610;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #fffdfd;
-  z-index:100;
-}
-.float:hover {
-	text-decoration: none;
-	color: #29e610;
-  background-color:#fff;
-}
 
-.my-float{
-	margin-top:16px;
-}
 @media screen and (max-width:991px){
     header{
         padding: 20px;
@@ -615,23 +599,18 @@ padding: 45px 0px;
     #menu-bar:checked ~ .nav-container{
         display: initial
     }
-    #formulario{
-        height: 700px;
-    }
+   
     .form-2{
-       
+        max-width: 100%;
+        margin: 20PX;
     }
     #fallos-pag{
         width: 100%;
         float: 0;
         left: 0;
     }
-    .cel-fallo{
-        width: 200px;
-        height: 500px;
-        float: 0;
-        left: 0;
-        padding: 20px 0;
+    .content2 .cel-fallo{
+        width: 45%;
     }
     #cartas{
         display: flex;
@@ -645,6 +624,24 @@ padding: 45px 0px;
         width: 220px;
         padding-right: 100px;
     }
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 25px 0px;
+        }
+
+        header .container{
+            display: flex;
+            height: 70px;
+            width: 99.9%;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+        }
+        header{
+            height: 70px;
+            width: 60%;
+        }
+        
 }
 
 
