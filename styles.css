@@ -341,76 +341,6 @@ width: 908px;
     transition: 400ms ease-in-out;
 }
 
-.primerslider, .segundoslider, .tercerslider, .cuartoslider, .quintolider,
-.sextoslider, .septimoslider, .octavoslider, .novenoslider, .decimoslider{
-    position: relative;
-    width: 100vh;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.primerslider{
-    background-color: white;
-}
-
-.segundoslider{
-    background-color:white;
-}
-.tercerslider{
-    background-color: white;
-}
-.cuartoslider{
-    background-color: white;
-}
-
-.septimoslider{
-    background-color:white;
-}
-.octavoslider{
-    background-color: white;
-}
-.novenoslider{
-    background-color: white;
-}
-.decimoslider{
-    background-color: white;
-}
-
-
-
-.slider input:nth-child(1):checked ~ .content{
-    left: 0;
-}
-.slider input:nth-child(2):checked ~ .content{
-    left: -100vh;
-}
-.slider input:nth-child(3):checked ~ .content{
-    left: -200vh;
-}
-.slider input:nth-child(4):checked ~ .content{
-    left: -300vh;
-}
-.slider input:nth-child(5):checked ~ .content{
-    left: -400vh;
-}
-.slider input:nth-child(6):checked ~ .content{
-    left: -500vh;
-}
-.slider input:nth-child(7):checked ~ .content{
-    left: -600vh;
-}
-.slider input:nth-child(8):checked ~ .content{
-    left: -700vh;
-}
-.slider input:nth-child(9):checked ~ .content{
-    left: -800vh;
-}
-.slider input:nth-child(10):checked ~ .content{
-    left: -900vh;
-}
-
 .content2{
 width: 50%;
 
@@ -586,7 +516,7 @@ padding: 45px 0px;
     }
     header .nav-container ul li ul{
         position: relative;
-        width: 100%;
+        width: 50%;
     }
     header .nav-container ul li ul li{
         background: #eee;
@@ -596,7 +526,16 @@ padding: 45px 0px;
         left: 0;
     }
     #menu-bar:checked ~ .nav-container{
-        display: initial
+        display: block;
+        
+    }
+    
+    .nav-menu{
+        display: block;
+        width: 90%;
+    }
+    .nav-container{
+        padding-right: 200px;
     }
    
     .form-2{
