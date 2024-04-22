@@ -591,6 +591,8 @@ padding: 45px 0px;
             height: 70px;
             width: 100%;
             box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
         }
         header{
             height: 70px;
