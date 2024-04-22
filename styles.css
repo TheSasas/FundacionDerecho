@@ -534,6 +534,7 @@ padding: 45px 0px;
     }
     .nav-container{
         padding-right: 200px;
+        border-radius: 20px;
     }
     #formulario{
         height: 80%;
