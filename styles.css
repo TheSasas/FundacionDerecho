@@ -782,7 +782,7 @@ font-size: 30px;
     }
 
     header .nav-container ul li{
-        width: 100%;
+        width: 150%;
     }
     header .nav-container ul li ul{
         position: relative;
