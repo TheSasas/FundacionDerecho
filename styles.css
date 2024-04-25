@@ -520,17 +520,21 @@ padding: 45px 0px;
 
 /*Pagina quienes somos*/
 
-.boton-regreso{
+.boton-regreso img{ 
     position: fixed;
+    height: 50px;
 	bottom:40px;
 	left:40px;
     text-align: center;
-    color: white;
-    z-index: 100;
+    color: #004AAD;
+    padding: 5px;
+    z-index: 200;
+    
 }
 i{
-font-size: 30px;
+    font-size: 20px;
 }
+
 
 #frase-fun{
     color: white;
@@ -866,7 +870,7 @@ font-size: 30px;
         height: 45vh;
     }
     .video-card video{
-        width: 400px;
+        width: 350px;
         border-radius: 25px;
         margin: 80px 0;
         padding: 0;
@@ -874,7 +878,7 @@ font-size: 30px;
     .video-card{
         padding: 0;
         margin: 0;
-        width: 400px;
+        width: 390px;
     }
     
     .container-video-cartas .contenido a{
@@ -889,7 +893,7 @@ font-size: 30px;
         padding: 25px 0px;
         }
         .logo-pie{
-            margin-left: 80px;
+            margin-left: 100px;
             width: 100px;
             height: 250px;
         }
@@ -898,8 +902,9 @@ font-size: 30px;
 
         }
         .grupo-1 .box p{
-            justify-content: center;
-            text-align: center;
+            justify-content: left;
+            text-align: left;
+            font-size: 15px;
         }
         header .container{
             display: flex;
@@ -1064,6 +1069,7 @@ font-size: 30px;
     text-transform: uppercase;
     color: black;
 }
+
 
 }
 
