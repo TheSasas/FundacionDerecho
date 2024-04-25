@@ -69,8 +69,7 @@ header .container{
 }
 .log{
     width: 190px;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;    
 }
 .nav-menu{
 display: flex;
@@ -523,20 +522,14 @@ padding: 45px 0px;
 
 .boton-regreso{
     position: fixed;
-    width:90px;
-	height:40px;
 	bottom:40px;
 	left:40px;
     text-align: center;
     color: white;
-    background-color: #066ef7;
-    text-decoration: none;
-    padding: 10px 10px;
-    border-radius: 5px;
     z-index: 100;
 }
-.boton-regreso:hover{
-    background-color: #032b5f;
+i{
+font-size: 30px;
 }
 
 #frase-fun{
