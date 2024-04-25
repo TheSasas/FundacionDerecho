@@ -918,10 +918,12 @@ font-size: 30px;
             padding: 0;
             padding-left: 60px;
             padding-top: 17px;
+            padding-right: 0;
             user-select: none;
         }
         label img{
             user-select: none;
+            margin-right: 0;
         }
         #fallos-pag img{
             width: 400px;
