@@ -110,6 +110,7 @@ justify-content: space-between;
     display: block;
     font-size: 14px;
     margin: 15px 0;
+    border-radius: 4px;
 }
 
 .submenu li a{
@@ -329,7 +330,7 @@ border-radius: 25px;
 padding: 10px 15px;
 
 }
-.video-card{
+.video-card-1{
     width: 100%;
 border-radius: 25px;
 padding: 10px 15px;
@@ -361,12 +362,14 @@ padding: 10px 15px;
     display: inline-block;
     padding: 10px;
     margin-top: 10px;
-    color: #004AAD;
+    color: white;
     border-radius: 4px;
     transition: all 400ms ease;
+    border: 1px solid white;
+    background-color: #004AAD;
 }
 .card .contenido a:hover{
-    background-color: #004AAD;
+    background-color: #032b5f;
     color: white;
 }
 #video-cartas{
@@ -504,7 +507,6 @@ padding: 45px 0px;
 	border-radius:50px;
 	text-align:center;
   font-size:30px;
-	box-shadow: 2px 2px 3px #fffdfd;
   z-index:100;
 }
 .float:hover {
@@ -517,6 +519,119 @@ padding: 45px 0px;
 	margin-top:16px;
 }
 
+/*Pagina quienes somos*/
+
+.boton-regreso{
+    position: fixed;
+    width:90px;
+	height:40px;
+	bottom:40px;
+	left:40px;
+    text-align: center;
+    color: white;
+    background-color: #066ef7;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    z-index: 100;
+}
+.boton-regreso:hover{
+    background-color: #032b5f;
+}
+
+#frase-fun{
+    color: white;
+        background-color:#004AAD;
+        height: 50%;
+        width: 100%;
+    }
+    #frase-fun {
+        text-align: center;
+    
+    }
+    #frase-fun h2{
+     font-size: 20px;
+     color: white;
+    }
+     #frase-fun .container-frase{
+        padding: 25px 0px
+       }
+
+       #Curriculum{
+        background-color: white;
+        height: 90vh;
+    }
+    
+    .container-curri{
+        width: 100%;
+        display: flex;
+        max-width: 1400px;
+    }
+    
+    .curri{
+        width: 100%;
+        height: 90%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        cursor: default;
+        transition: all 400ms ease;
+    }
+    .curri:hover{
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        transform: translateY(-3%);
+    }
+    .curri img{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 15px;
+    
+    }
+    
+    
+    .curri .contenido{
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .curri .contenido p{
+        line-height: 1.5;
+        color: #6a6a6a;
+        font-size: 14px;
+    }
+    
+    .curri .contenido h3{
+        font-size: 27px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    .curri .contenido a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        color: white;
+        border-radius: 4px;
+        transition: all 400ms ease;
+        border: 1px solid white;
+        background-color: #004AAD;
+    }
+    .curri .contenido a:hover{
+        background-color: #032b5f;
+        color: white;
+    }
+    .relleno{
+        background-color:white;
+        height: 20vh;
+    }
+    .relleno h1{
+        color: white;
+    }
+    
+    
+
 /*Pagina mision y vision*/
 .containermision{
    max-width: 700px;
@@ -528,12 +643,122 @@ padding: 45px 0px;
    border: 1px solid #004AAD;
    border-radius: 15px;
 }
-.volver-img{
-    width: 100px;
-    padding: 0 20px;
+
+#misionvision{
+    background-color: white;
+    height: 100%;
 }
-.volver-img:hover{
+
+.misionyvision{
+    width: 1300px;
+    height: 900px;
+    display: flex;
+    max-width: 1400px;
+}
+
+.mision{
+    width: 500%;
+    height: 90%;
+    margin: 0;
+    margin-left: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    
+    background-color: rgb(25, 184, 11);
+}
+.mision:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.mision img{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 15px;
+    
+    }
+
+.mision .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.mision .contenido p{
+    line-height: 1.5;
+    color: white;
+    font-size: 19px;
+    padding-bottom: 40px;
+    justify-content: left;
+}
+
+.mision .contenido h3{
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+.mision .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    border: 1px solid white;
     background-color: #004AAD;
+}
+.mision .contenido a:hover{
+    background-color: #032b5f;
+    color: white;
+}
+.vision{
+    width: 500%;
+    height: 90%;
+    margin: 0;
+    margin-left: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    
+    background-color: #004AAD;
+}
+.vision:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.vision img{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 15px;
+    
+    }
+
+.vision .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.vision .contenido p{
+    line-height: 1.5;
+    color: white;
+    font-size: 19px;
+    padding-bottom: 40px;
+}
+
+.vision .contenido h3{
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
 }
 
 
@@ -557,7 +782,7 @@ padding: 45px 0px;
     }
     label img{
         height: 35px;
-        width: 35px;
+        width: 30px;
         margin: 0 60px;
         padding: 0;
 
@@ -596,7 +821,9 @@ padding: 45px 0px;
     .form-2{
         width: 600px;
         margin: 20px 65px;
+        padding: 20px 25px;
     }
+   
     #fallos-pag{
         width: 100%;
     }
@@ -621,7 +848,7 @@ padding: 45px 0px;
         border-radius: 25px;
         padding: 10px 15px;
         }
-        .video-card{
+        .video-card-1{
             width: 365px;
         height: 350px;
         border-radius: 25px;
@@ -646,19 +873,17 @@ padding: 45px 0px;
         height: 45vh;
     }
     .video-card video{
-        width: 330px;
-        height: 200px;
+        width: 400px;
         border-radius: 25px;
+        margin: 80px 0;
+        padding: 0;
+    }
+    .video-card{
         padding: 0;
         margin: 0;
+        width: 400px;
     }
-    .container-video-cartas .contenido h3{
-        font-size: 19px;
-    }
-    .container-video-cartas .contenido p{
-        font-size: 13px;
-        padding: 0;
-    }
+    
     .container-video-cartas .contenido a{
         margin: 0;
         padding: 40px;
@@ -670,7 +895,19 @@ padding: 45px 0px;
         grid-gap: 30px;
         padding: 25px 0px;
         }
+        .logo-pie{
+            margin-left: 80px;
+            width: 100px;
+            height: 250px;
+        }
+        .grupo-1 .box{
+            width: 390px;
 
+        }
+        .grupo-1 .box p{
+            justify-content: center;
+            text-align: center;
+        }
         header .container{
             display: flex;
             height: 70px;
@@ -694,32 +931,141 @@ padding: 45px 0px;
             height: 350px;
         }
 
-        /*Pagina mision y vision*/
-        .containermision{
-            width: 80%;
-            padding: 45px 10px;
-            margin: 0;
-            margin-top: 75px;
-            margin-bottom: 75px;
-            border-radius: 15px;
-            background-color: white;
-            box-shadow: 1px 1px 10px black;
-         }
-         .containermision p{
-            font-size: 12px;
-         }
-         .containermision h2{
-            font-size: 14px;
-         }
-.volver-img{
-    width: 100px;
-    padding: 0 20px;
-}
-.volver-img:hover{
-    background-color: #004AAD;
+
+/*Pagina quienes somos*/
+
+#Curriculum{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
+.container-curri{
+    flex-direction: column;
+    width: 365px;
+}
 
+.curri{
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.curri:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.curri img{
+    width: 365px;
+    height: 350px;
+    border-radius: 25px;
+    padding: 10px 15px;
+
+}
+
+/*Mision y vision*/
+#misionvision{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.misionyvision{
+    flex-direction: column;
+    width: 365px;
+    height: 90%;
+}
+
+.mision{
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.mision :hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.mision img{
+    width: 365px;
+    height: 350px;
+    border-radius: 25px;
+    padding: 10px 15px;
+
+}
+
+.mision .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.mision .contenido p{
+    line-height: 1.5;
+    color: black;
+    font-size: 14px;
+    padding-bottom: 40px;
+    justify-content: left;
+}
+
+.mision .contenido h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: black;
+}
+.vision{
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.vision:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.vision img{
+    width: 365px;
+    height: 350px;
+    border-radius: 25px;
+    padding: 10px 15px;
+
+}
+.vision .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.vision .contenido p{
+    line-height: 1.5;
+    color: black;
+    font-size: 14px;
+    padding-bottom: 40px;
+    justify-content: left;
+}
+
+.vision .contenido h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: black;
+}
 
 }
 
