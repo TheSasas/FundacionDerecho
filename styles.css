@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+    box-sizing:border-box;
     padding: 0;
     margin: 0;
 }
@@ -23,7 +23,12 @@ li{font-size: 25px;}
 header{
     background: none;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: auto;
     width: 98%;
+
 
 }
 header .container{
@@ -40,7 +45,7 @@ button{
     border-radius: 5px;
     color: white;
     border: 1px solid #082edb ;
-    box-shadow: 2px 2px 7px black;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.4);
     background-color: #082edb;
     cursor: pointer;
 }
@@ -87,7 +92,6 @@ justify-content: space-between;
     text-decoration: none;
     transition: 0.3s;
     cursor: pointer;
-    
 }
 
 .a-nav ul li a{
@@ -409,24 +413,92 @@ transition: all 400ms ease;
     color: white;
     background-color: #004AAD;
 }
-.video-card{
-    width: 100%;
-    height: 90%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
 
+/*slider pagina principa*/
+
+.slider {
+	width: 100%;
+    height: 70vh;
+	margin: auto;
+	overflow: hidden;
+    background-color: #fff;
 }
-.video-card video{
-width: 800px;
-border-radius: 25px;
-padding: 10px 15px;
-margin-left: 260px;
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
 }
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 400px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/*slider pagina principa*/
+
+
+/*slider fallos pagina*/
+
+.slider-fallos {
+	width: 100%;
+    height: 70vh;
+	margin: auto;
+	overflow: hidden;
+    background-color: #e5effc;
+}
+
+.slider-fallos ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider-fallos li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-fallos img {
+	width: 400px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/*slider*/
+
 .pie-pagina{
     width: 100%;
     background-color: #0a141d;
@@ -448,11 +520,7 @@ padding: 45px 0px;
     justify-content: center;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
-    width: 250px;
-    cursor: none;
-    user-select: none;
-}
+
 .pie-pagina .grupo-1 .box h2{
     color: white;
     padding: 0;
@@ -656,7 +724,7 @@ i{
 }
 
 .mision{
-    width: 500%;
+    width: 3000px;
     height: 90%;
     margin: 0;
     margin-left: 150px;
@@ -716,7 +784,7 @@ i{
     color: white;
 }
 .vision{
-    width: 500%;
+    width: 3000px;
     height: 90%;
     margin: 0;
     margin-left: 150px;
@@ -841,6 +909,7 @@ padding: 10px 15px;
 @media screen and (max-width:991px){
     header{
         padding: 20px;
+        width: 100px;
     }
 
     header label{
@@ -860,9 +929,9 @@ padding: 10px 15px;
         width: 30px;
         margin: 0 40px;
         padding: 0;
-
     }
 
+   
     header .nav-container ul li{
         width: 150%;
     }
@@ -915,7 +984,7 @@ padding: 10px 15px;
     }
     figure{
         width: 220px;
-        padding-right: 100px;
+        padding-right: 20px;
     }
     .card img{
         width: 365px;
@@ -1187,4 +1256,622 @@ padding: 10px 15px;
 }
 
 
+}
+
+@media screen and (max-width:1280px){
+    header{
+        padding: 20px;
+        width: 100px;
+    }
+
+    header label{
+        display: initial;
+        padding: 20px;
+        flex-direction: row;
+    }
+    header .nav-container{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #FFF;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 800px;
+        padding: 0;
+        user-select: none;
+    }
+
+   
+    header .nav-container ul li{
+        width: 150%;
+    }
+    header .nav-container ul li ul{
+        position: relative;
+        width: 50%;
+    }
+    header .nav-container ul li ul li{
+        background: #eee;
+    }
+    header .nav-container ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .nav-container{
+        display: block;
+        
+    }
+    
+    .nav-menu{
+        display: block;
+        width: 90%;
+    }
+    .nav-container{
+        padding-right: 200px;
+        border-radius: 20px;
+    }
+    #formulario{
+        height: 80%;
+    }
+    .form-2{
+        width: 600px;
+        margin: 20px 65px;
+        padding: 20px 25px;
+    }
+   
+    #fallos-pag{
+        width: 100%;
+    }
+    .content2 .cel-fallo{
+        width: 45%;
+    }
+    #cartas{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-cards{
+        width: 365px;
+        flex-direction: column;
+    }
+    figure{
+        width: 220px;
+        padding-right: 20px;
+    }
+    .card img{
+        width: 365px;
+        height: 350px;
+        border-radius: 25px;
+        padding: 10px 15px;
+        }
+        .video-card-1{
+            width: 365px;
+        height: 350px;
+        border-radius: 25px;
+        padding: 10px 15px;
+        }
+        .video-card-2{
+            width: 365px;
+        height: 350px;
+        border-radius: 25px;
+        padding: 10px 15px;
+        }
+    #video-cartas{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .container-video-cartas{
+        width: 365px;
+        flex-direction: column;
+    }
+    .video-card{
+        height: 45vh;
+    }
+    .video-card video{
+        width: 350px;
+        border-radius: 25px;
+        margin: 80px 0;
+        padding: 0;
+    }
+    .video-card{
+        padding: 0;
+        margin: 0;
+        width: 390px;
+    }
+    
+    .container-video-cartas .contenido a{
+        margin: 0;
+        padding: 40px;
+    }
+
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 25px 0px;
+        }
+        .logo-pie{
+            margin-left: 100px;
+            width: 100px;
+            height: 250px;
+        }
+        .grupo-1 .box{
+            width: 390px;
+
+        }
+        .grupo-1 .box p{
+            justify-content: left;
+            text-align: left;
+            font-size: 15px;
+        }
+        header .container{
+            display: flex;
+            height: 70px;
+            width: 100%;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        header{
+            height: 70px;
+            width: 100%;
+        }
+        .container label{
+            margin-left: 10px;
+            padding: 0;
+            padding-left: 60px;
+            padding-top: 17px;
+            padding-right: 0;
+            user-select: none;
+        }
+        label img{
+            user-select: none;
+            margin-right: 0;
+        }
+        #fallos-pag img{
+            width: 400px;
+            height: 350px;
+        }
+
+
+/*Pagina quienes somos*/
+
+#Curriculum{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container-curri{
+    flex-direction: column;
+    width: 365px;
+}
+
+.curri{
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.curri:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.curri img{
+    width: 365px;
+    height: 350px;
+    border-radius: 25px;
+    padding: 10px 15px;
+
+}
+
+/*Mision y vision*/
+#misionvision{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.misionyvision{
+    flex-direction: column;
+    width: 365px;
+    height: 90%;
+}
+
+.mision{
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.mision :hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.mision img{
+    width: 365px;
+    height: 350px;
+    border-radius: 25px;
+    padding: 10px 15px;
+
+}
+
+.mision .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.mision .contenido p{
+    line-height: 1.5;
+    color: black;
+    font-size: 14px;
+    padding-bottom: 40px;
+    justify-content: left;
+}
+
+.mision .contenido h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: black;
+}
+.vision{
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.vision:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.vision img{
+    width: 365px;
+    height: 350px;
+    border-radius: 25px;
+    padding: 10px 15px;
+
+}
+.vision .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.vision .contenido p{
+    line-height: 1.5;
+    color: black;
+    font-size: 14px;
+    padding-bottom: 40px;
+    justify-content: left;
+}
+
+.vision .contenido h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: black;
+}
+ /*pagina fallos*/
+ 
+#lista-fallos{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container-fallos{
+    flex-direction: column;
+    width: 365px;
+}
+
+.fallos{
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.fallos:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.fallos img{
+    width: 355px;
+    height: 310px;
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+#fallos-pag-fallos img{
+    width: 400px;
+    height: 350px;
+}
+
+
+}
+
+
+@media screen and (max-width:1178px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 700px;
+        padding: 0;
+        user-select: none;
+    }
+    #formulario{
+        height: 80%;
+    }
+    .form-2{
+        width: 1000px;
+        margin: 40px 95px;
+        padding: 40px 45px;
+    }
+}
+
+
+@media screen and (max-width:1038px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 600px;
+        padding: 0;
+        user-select: none;
+    }
+}
+@media screen and (max-width:934px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 500px;
+        padding: 0;
+        user-select: none;
+    }
+}
+@media screen and (max-width:842px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 400px;
+        padding: 0;
+        user-select: none;
+    }
+}
+@media screen and (max-width:730px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 350px;
+        padding: 0;
+        user-select: none;
+    }
+}
+@media screen and (max-width:690px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 300px;
+        padding: 0;
+        user-select: none;
+    }
+}
+@media screen and (max-width:637px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 250px;
+        padding: 0;
+        user-select: none;
+    }
+}
+@media screen and (max-width:581px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 200px;
+        padding: 0;
+        user-select: none;
+    }
+}
+@media screen and (max-width:529px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 150px;
+        padding: 0;
+        user-select: none;
+    }
+}
+@media screen and (max-width:478px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 100px;
+        padding: 0;
+        user-select: none;
+    }
+}
+@media screen and (max-width:430px){
+    label img{
+        height: 35px;
+        width: 30px;
+        margin: 0 50px;
+        padding: 0;
+        user-select: none;
+    }
+
+    .form-2{
+      width: 600px;
+      margin-left: 60px;
+    }
+    .grupo-1 .box{
+        width: 90%;
+        
+    }
+}
+@media screen and (max-width:408px){
+    label img{
+        height: 30px;
+        width: 45%;
+        margin: 0 20px;
+        padding: 0;
+        user-select: none;
+    }
+    header{
+        width: 30px;
+    }
+
+    header .container {
+        width: 50%;
+    }
+
+    .pie-pagina .grupo-1 .box-logo .logo-pie{
+        margin:0 70px;
+        width: 80%;
+        height: auto;
+        
+    }
+    .grupo-1 .box p{
+        width: 90%;
+        justify-content: center;
+        text-align: left;
+        font-size: 12px;
+        margin:0 70px;
+    }
+    .pie-pagina .grupo-1 .box h2{
+        color: white;
+        padding: 0;
+        font-size: 20px;
+        width: 30%;
+        margin:0 70px;
+        
+    }
+    
+    
+    .pie-pagina .grupo-1 .box p{
+        color: #efefef;
+        margin-bottom: 10px;
+        width: 40%;
+        margin:0 70px;
+    }
+    
+    .pie-pagina .grupo-1 .box .red-social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 10%;
+        height: 10%;
+        line-height: 45px;
+        color: white;
+        margin-right: 10px;
+        margin-left: 30px;
+        background-color: #0d2033;
+        text-align: center;
+        transition: all 300ms ease;
+        padding: 0;
+    } 
+    .box a{
+        width: 200px; 
+        height: 100px;
+     }
+     .box-logo{
+        width: 100px;
+     }
+
+     .box{
+        width: 100px;
+     }
+
+    .container-cards{
+        width: 90%;
+        flex-direction: column;
+    }
+    figure{
+        width: 220px;
+        padding-right: 20px;
+    }
+    .card img{
+        width: 320px;
+        height: 300px;
+        border-radius: 25px;
+        padding: 10px 15px;
+        }
+        .video-card-1{
+            width: 320px;
+        height: 300px;
+        border-radius: 25px;
+        padding: 10px 15px;
+        }
+        .video-card-2{
+            width: 320px;
+        height: 300px;
+        border-radius: 25px;
+        padding: 10px 15px;
+        }
+
+        header .container{
+            width: 320px;
+            
+        }
+        .video-card{
+            width: 90%;
+            height: 90%;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            cursor: default;
+            transition: all 400ms ease;
+        
+        }
+        .video-card video{
+        width: 80%;
+        height: 200px;
+        
+        }
+
+        #fallos-pag img{
+            width: 90%;
+            height: 270px;
+        }
+        
+        .form-2{
+            width: 50%;
+        }
+        .input-group{
+            width: 90%;
+        }
+        .form-text a{
+            font-size: 6px;
+        }
+
+        .btn{
+            padding: 6px 0;
+            font-size: 13px;
+        }
+
+        #hero{
+            width: 100%;
+        }
 }
