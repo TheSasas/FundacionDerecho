@@ -1886,4 +1886,13 @@ padding: 10px 15px;
       margin-left: 60px;
     }
 
+    .box-logo-pie img{
+        display: none;
+    }
+
+    .box{
+        padding-left: 50px;
+    }
+    
+
 }
